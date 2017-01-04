@@ -1,4 +1,4 @@
-L_CXXFLAGS=
+CXXFLAGS= -g -lgtest -lgtest_main -lpthread
 
 CXXFILES:=algorithm.cc
 TARGETS:=algorithm
@@ -18,6 +18,7 @@ install: $(TARGETS)
 
 uninstall:
 	rm -f $(DESTDIR)/$(PREFIX)/bin/$(TARGETS)
+
 
 clean:
 	$(RM) -- $(OBJECTS)

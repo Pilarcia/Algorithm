@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iso646.h>
+#include "gtest/gtest.h"
  
 typedef struct _nodo {
 	int valor;
