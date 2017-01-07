@@ -19,7 +19,8 @@ is_empty( Lista lista )
 
 void
 Insertar( Lista *lista, int v )
-{
+{1
+	
 	pNodo nuevo, anterior;
 	/* Crear un nodo nuevo */
 	nuevo = ( pNodo )malloc( sizeof( tipoNodo ));
@@ -99,9 +100,9 @@ int main() {
 	Insertar(&lista, 20);
 	Insertar(&lista, 10);
 	Insertar(&lista, 40);
-	Insertar(&lista, 30);
+	Insertar( &lista, 30 );
 
-	MostrarLista(lista);
+	MostrarLista( lista );
 
 	Borrar(&lista, 10);
 	Borrar(&lista, 15);
