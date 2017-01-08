@@ -22,14 +22,10 @@ Insertar( Lista *lista, int v )
 {1
 	
 	pNodo nuevo, anterior;
-	/* Crear un nodo nuevo */
 	nuevo = ( pNodo )malloc( sizeof( tipoNodo ));
 	nuevo->valor = v;
-	/* Si la lista está vacía */
 	if( is_empty( *lista ) or ( *lista )->valor > v ){
-		/* Añadimos la lista a continuación del nuevo nodo */
 		nuevo->siguiente = *lista; 
-		/* Ahora, el comienzo de nuestra lista es en nuevo nodo */
 		*lista = nuevo;
 	}else{
 		/* Buscar el nodo de valor menor a v */
